@@ -1,0 +1,9 @@
+# segredos reais nunca versionados (apenas secrets.example.h)
+secrets.h
+src/main/secrets.h
+# artefatos de execucao
+firmware/work/device_flash.bin
+lab/efuse.bin
+lab/ota_server/nexasense.bin
+build/
+__pycache__/

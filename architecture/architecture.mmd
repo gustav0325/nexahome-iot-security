@@ -1,0 +1,16 @@
+flowchart TB
+  subgraph HW["Dispositivo NexaSense (ESP32)"]
+    SENS["Sensores T/umidade"] --> MCU["MCU ESP32<br/>Wi-Fi + 520KB RAM"]
+    MCU --- FLASH["SPI Flash 4MB<br/>factory + ota_0 + ota_1 + NVS<br/>(Flash Encryption OFF)"]
+    MCU --- UART["UART0 / console diag<br/>(sem autenticacao)"]
+    MCU --- JTAG["JTAG / boot mode<br/>(sem eFuse de bloqueio)"]
+    MCU --- FW["Firmware v1.0.0-proto<br/>Secure Boot OFF"]
+  end
+  MCU -->|"MQTT 1883 texto claro<br/>telemetry / cmd / resp"| NET["Rede de laboratorio"]
+  MCU -->|"HTTP /status /config<br/>(sem auth)"| NET
+  NET --> BROKER["Broker MQTT<br/>(cred. de frota compartilhada)"]
+  NET --> OTA["Servidor OTA HTTP<br/>(sem assinatura)"]
+  BROKER --> CLOUD["Plataforma NexaHome<br/>(token de API)"]
+
+  classDef risk fill:#fde2e2,stroke:#c0392b,color:#7b241c;
+  class UART,JTAG,FLASH,FW,OTA risk;

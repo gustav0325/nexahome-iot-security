@@ -1,0 +1,8 @@
+nexahome/sense/NXS-000000/telemetry {"device":"NXS-000000","fw":"1.0.0-proto","temp":24.55,"hum":63.70,"token":"nxh_live_7f3a9c21e8b04d5f9a6c","uptime":2}
+nexahome/sense/NXS-000000/telemetry {"device":"NXS-000000","fw":"1.0.0-proto","temp":24.86,"hum":63.52,"token":"nxh_live_7f3a9c21e8b04d5f9a6c","uptime":12}
+nexahome/sense/NXS-000000/telemetry {"device":"NXS-000000","fw":"1.0.0-proto","temp":24.96,"hum":62.85,"token":"nxh_live_7f3a9c21e8b04d5f9a6c","uptime":22}
+nexahome/sense/NXS-000000/telemetry {"device":"NXS-000000","fw":"1.0.0-proto","temp":25.43,"hum":62.89,"token":"nxh_live_7f3a9c21e8b04d5f9a6c","uptime":32}
+nexahome/sense/NXS-000000/telemetry {"device":"NXS-000000","fw":"1.0.0-proto","temp":25.56,"hum":63.02,"token":"nxh_live_7f3a9c21e8b04d5f9a6c","uptime":37}
+nexahome/sense/NXS-000000/telemetry {"device":"NXS-000000","fw":"1.0.0-proto","temp":26.07,"hum":62.23,"token":"nxh_live_7f3a9c21e8b04d5f9a6c","uptime":42}
+nexahome/sense/NXS-000000/telemetry {"device":"NXS-000000","fw":"1.0.0-proto","temp":25.88,"hum":62.02,"token":"nxh_live_7f3a9c21e8b04d5f9a6c","uptime":47}
+nexahome/sense/NXS-000000/telemetry {"device":"NXS-000000","fw":"1.0.0-proto","temp":26.37,"hum":61.78,"token":"nxh_live_7f3a9c21e8b04d5f9a6c","uptime":52}

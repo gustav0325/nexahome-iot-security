@@ -1,0 +1,1 @@
+nexahome/sense/NXS-000000/resp {"device":"NXS-000000","fw":"1.0.0-proto","wifi_ssid":"NexaHome-Lab","wifi_pass":"NexaLab#2026!wifi","mqtt":"10.0.2.2:1883","mqtt_user":"nexasense","mqtt_pass":"Nx-Shared-Fleet-Pass-2026","api_token":"nxh_live_7f3a9c21e8b04d5f9a6c","cloud":"http://api.nexahome.lab/v1/telemetry","ota_url":"http://10.0.2.2:8000/nexasense.bin","interval":10}

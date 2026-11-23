@@ -1,0 +1,12 @@
+# Registro de preservacao do firmware - NexaSense
+# Data da analise: 2026-11-22T04:16:38Z (UTC)
+# Origem: build de laboratorio ESP-IDF v5.3.2 (firmware educacional fornecido), merge_bin 4MB
+
+arquivo: nexasense-v1.0.0-proto_app.bin
+tamanho: 630784 bytes
+sha256:  3d31f8b17303c4872e549504fcd4d2f77e3f8b72fdfb76db69848409cc78fecc
+
+arquivo: nexasense-v1.0.0-proto_flash4MB.bin
+tamanho: 4194304 bytes
+sha256:  a5ec33c36204cfb82893eae198594e5d2c22df4a3fb1ad7336013850e2144505
+

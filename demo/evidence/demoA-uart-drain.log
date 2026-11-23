@@ -1,0 +1,83 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (744) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (746) boot: compile time Nov 22 2026 01:15:36[0m
+[0;32mI (747) boot: Multicore bootloader[0m
+[0;32mI (785) boot: chip revision: v0.0[0m
+[0;32mI (790) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (790) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (791) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (806) boot: Enabling RNG early entropy source...[0m
+[0;32mI (825) boot: Partition Table:[0m
+[0;32mI (826) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (826) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (828) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (828) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (829) boot:  3 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (830) boot:  4 ota_0            OTA app          00 10 00110000 00100000[0m
+[0;32mI (830) boot:  5 ota_1            OTA app          00 11 00210000 00100000[0m
+[0;32mI (840) boot: End of partition table[0m
+[0;32mI (858) boot: Defaulting to factory image[0m
+[0;32mI (872) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e320h (123680) map[0m
+[0;32mI (919) esp_image: segment 1: paddr=0002e348 vaddr=3ffb0000 size=01cd0h (  7376) load[0m
+[0;32mI (947) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=6a32ch (434988) map[0m
+[0;32mI (1056) esp_image: segment 3: paddr=0009a354 vaddr=3ffb1cd0 size=00850h (  2128) load[0m
+[0;32mI (1081) esp_image: segment 4: paddr=0009abac vaddr=40080000 size=0f430h ( 62512) load[0m
+[0;32mI (1114) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (1114) boot: Disabling RNG early entropy source...[0m
+[0;32mI (1137) cpu_start: Multicore app[0m
+[0;32mI (1949) cpu_start: Pro cpu start user code[0m
+[0;32mI (1950) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1950) app_init: Application information:[0m
+[0;32mI (1950) app_init: Project name:     nexasense[0m
+[0;32mI (1951) app_init: App version:      1[0m
+[0;32mI (1951) app_init: Compile time:     Nov 22 2026 01:15:32[0m
+[0;32mI (1951) app_init: ELF file SHA256:  b0f00c5c7...[0m
+[0;32mI (1952) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (1952) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1953) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1953) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (1955) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1957) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1957) heap_init: At 3FFB4428 len 0002BBD8 (174 KiB): DRAM[0m
+[0;32mI (1957) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1957) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1958) heap_init: At 4008F430 len 00010BD0 (66 KiB): IRAM[0m
+[0;32mI (1996) spi_flash: detected chip: gd[0m
+[0;32mI (2005) spi_flash: flash io: dio[0m
+[0;32mI (2019) main_task: Started on CPU0[0m
+[0;32mI (2029) main_task: Calling app_main()[0m
+
+==============================================
+ NexaSense 1.0.0-proto  (build Nov 22 2026 01:15:32)
+ ESP-IDF v5.3.2 | projeto nexasense
+ DEBUG BUILD - diagnostico habilitado
+==============================================
+[0;33mW (2369) NEXASENSE: NVS vazia -> gravando configuracao de fabrica[0m
+[0;32mI (2949) NEXASENSE: Device ID: NXS-000000  MAC: 00:00:00:00:00:00[0m
+[0;32mI (2949) NEXASENSE: MQTT broker=10.0.2.2:1883 user=nexasense pass=Nx-Shared-Fleet-Pass-2026[0m
+[0;32mI (2949) NEXASENSE: API token=nxh_live_7f3a9c21e8b04d5f9a6c endpoint=http://api.nexahome.lab/v1/telemetry[0m
+[0;32mI (2949) NEXASENSE: OTA url=http://10.0.2.2:8000/nexasense.bin | PIN de servico=4321[0m
+
+[diag] console de diagnostico pronto. Digite 'help'.
+nexa> [0;32mI (2959) NEXASENSE: Conectando ao Wi-Fi SSID='NexaHome-Lab' senha='NexaLab#2026!wifi'[0m
+[0;32mI (2959) NEXASENSE: (ambiente QEMU: enlace Wi-Fi substituido por OpenETH emulado)[0m
+[0;32mI (2989) esp_eth.netif.netif_glue: 00:00:00:00:00:03[0m
+[0;32mI (2989) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (4089) esp_netif_handlers: eth ip: 10.0.2.15, mask: 255.255.255.0, gw: 10.0.2.2[0m
+[0;32mI (4099) NEXASENSE: Rede OK - IP 10.0.2.15 gw 10.0.2.2[0m
+[0;32mI (4109) NEXASENSE: HTTP local ativo: GET /status, GET /config (sem autenticacao)[0m
+[0;32mI (4139) main_task: Returned from app_main()[0m
+[0;32mI (4139) NEXASENSE: MQTT conectado em mqtt://10.0.2.2:1883[0m
+[0;32mI (4149) NEXASENSE: Inscrito em nexahome/sense/NXS-000000/cmd[0m
+[0;32mI (7099) NEXASENSE: MQTT cmd recebido: {"cmd":"get_config"}[0m
