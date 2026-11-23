@@ -97,7 +97,7 @@ cd nexahome-iot-security
 Cada etapa está detalhada em `lab/reproduce.sh`. Para o navegador, ver `wokwi/README.md`.
 
 ## Vídeo de demonstração
-Link (YouTube não listado / plataforma equivalente): **_<inserir link>_**
+Link (YouTube não listado / plataforma equivalente): **https://youtu.be/TIdxt-G-tp4**
 
 ---
 *Credenciais, tokens e senhas deste repositório são fictícios e de laboratório; não
